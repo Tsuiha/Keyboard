@@ -5,11 +5,11 @@
   (paper "A3")
 
   (lib_symbols
-    (symbol "Simulation_SPICE:DIODE" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Device:D" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "DIODE" (id 1) (at 0 -2.54 0)
+      (property "Value" "D" (id 1) (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
@@ -18,19 +18,24 @@
       (property "Datasheet" "~" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Spice_Netlist_Enabled" "Y" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Spice_Primitive" "D" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "ki_keywords" "simulation" (id 6) (at 0 0 0)
+      (property "ki_keywords" "diode" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Diode, anode on pin 1, for simulation only!" (id 7) (at 0 0 0)
+      (property "ki_description" "Diode" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "DIODE_0_1"
+      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "D_0_1"
+        (polyline
+          (pts
+            (xy -1.27 1.27)
+            (xy -1.27 -1.27)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
         (polyline
           (pts
             (xy 1.27 0)
@@ -43,28 +48,20 @@
           (pts
             (xy 1.27 1.27)
             (xy 1.27 -1.27)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 -1.27)
-            (xy -1.27 1.27)
-            (xy 1.27 0)
-            (xy -1.27 -1.27)
+            (xy -1.27 0)
+            (xy 1.27 1.27)
           )
           (stroke (width 0.254) (type default) (color 0 0 0 0))
           (fill (type none))
         )
       )
-      (symbol "DIODE_1_1"
+      (symbol "D_1_1"
         (pin passive line (at -3.81 0 0) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
+          (name "K" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 3.81 0 180) (length 2.54)
-          (name "K" (effects (font (size 1.27 1.27))))
+          (name "A" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
       )
@@ -672,7 +669,7 @@
     )
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 116.84 156.21 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 116.84 156.21 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 0836cd50-e1b1-4d98-8985-c243288cb745)
     (property "Reference" "D2" (id 0) (at 119.38 154.9399 90)
@@ -697,7 +694,7 @@
     (pin "2" (uuid 918edb49-dc23-4ee3-89c0-5a6863a294a4))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 91.44 232.41 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 91.44 232.41 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 1402a42c-7cce-4ad6-8098-7b51cc1743de)
     (property "Reference" "D12" (id 0) (at 93.98 231.1399 90)
@@ -735,7 +732,7 @@
     (pin "2" (uuid 16ed024b-1d7b-4707-9ec5-3d0a6c8655aa))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 116.84 181.61 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 116.84 181.61 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 17c67304-5004-4c77-a92c-7c8fdc4facfb)
     (property "Reference" "D5" (id 0) (at 119.38 180.3399 90)
@@ -760,7 +757,7 @@
     (pin "2" (uuid b2a7d10c-1718-48e0-bb1b-f0e6c9154bab))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 142.24 232.41 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 142.24 232.41 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 231a09b5-4582-4578-89be-fe4f65f1b378)
     (property "Reference" "D14" (id 0) (at 144.78 231.1399 90)
@@ -868,7 +865,7 @@
     (pin "2" (uuid f5230671-8261-4d2f-bdb3-02bc76ccdff2))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 142.24 156.21 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 142.24 156.21 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4db81cb6-402d-4a17-9331-55c0c14465a0)
     (property "Reference" "D3" (id 0) (at 144.78 154.9399 90)
@@ -893,7 +890,7 @@
     (pin "2" (uuid 25c6f664-eacd-4f84-bef8-1acafe2724fe))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 116.84 232.41 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 116.84 232.41 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 53ff5ebb-7a1c-412f-8a58-1f4bd4d7c57f)
     (property "Reference" "D13" (id 0) (at 119.38 231.1399 90)
@@ -949,7 +946,7 @@
     (pin "1" (uuid d27d3f51-3723-4fb3-9c25-143f702701cb))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 142.24 207.01 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 142.24 207.01 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 768729da-98a4-4a0e-a756-16566fb85eab)
     (property "Reference" "D10" (id 0) (at 144.78 205.7399 90)
@@ -1046,7 +1043,7 @@
     (pin "9" (uuid 891e82ac-d85a-4576-b6b5-b1b8ffa8ba08))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 66.04 207.01 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 66.04 207.01 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9a217ecd-4453-4736-8d15-afb80f8d70b3)
     (property "Reference" "D7" (id 0) (at 68.58 205.7399 90)
@@ -1102,7 +1099,7 @@
     (pin "2" (uuid 0f33a8f0-9fe0-4b74-9ad8-6ccdf2edf491))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 91.44 156.21 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 91.44 156.21 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b118cdbf-89f2-4edc-90c4-9d4b5f964c03)
     (property "Reference" "D1" (id 0) (at 93.98 154.9399 90)
@@ -1200,7 +1197,7 @@
     (pin "1" (uuid ed4065be-1692-405b-b39b-5cf2e721c509))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 91.44 181.61 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 91.44 181.61 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d77dcfb1-1818-42f2-a0b0-208e3e3727bc)
     (property "Reference" "D4" (id 0) (at 93.98 180.3399 90)
@@ -1256,7 +1253,7 @@
     (pin "1" (uuid 3a12382c-24fd-49c8-b4c5-9b1fdba222fa))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 142.24 181.61 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 142.24 181.61 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e7282e63-3e13-4f97-ba9f-da6707604864)
     (property "Reference" "D6" (id 0) (at 144.78 180.3399 90)
@@ -1281,7 +1278,7 @@
     (pin "2" (uuid 6f40dc2d-9a44-4252-8e66-afe16172d948))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 66.04 232.41 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 66.04 232.41 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f0590e88-13d8-4072-bdef-b5ec81cbb9b1)
     (property "Reference" "D11" (id 0) (at 68.58 231.1399 90)
@@ -1324,7 +1321,7 @@
     (pin "1" (uuid 87e106f9-76d3-4010-9875-2b8e66ff3001))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 116.84 207.01 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 116.84 207.01 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f53038df-31db-4251-9cd5-4983a244d815)
     (property "Reference" "D9" (id 0) (at 119.38 205.7399 90)
@@ -1391,7 +1388,7 @@
     (pin "1" (uuid e629882f-80a1-4792-9d7c-37f13170808d))
   )
 
-  (symbol (lib_id "Simulation_SPICE:DIODE") (at 91.44 207.01 270) (unit 1)
+  (symbol (lib_id "Device:D") (at 91.44 207.01 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid fb3acbac-cf1a-4f2c-8753-edf1e32a3aab)
     (property "Reference" "D8" (id 0) (at 93.98 205.7399 90)
